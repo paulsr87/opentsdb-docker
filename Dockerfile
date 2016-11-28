@@ -57,7 +57,7 @@ ADD docker/hbase-site.xml /opt/hbase/conf/
 ADD docker/start_opentsdb.sh /opt/bin/
 ADD docker/create_tsdb_tables.sh /opt/bin/
 ADD docker/start_hbase.sh /opt/bin/
-ADD docker/opentsdb.conf /opt/opentsdb/opentsdb.conf
+ADD docker/opentsdb.conf /opt/opentsdb/
 
 RUN for i in /opt/bin/start_hbase.sh /opt/bin/start_opentsdb.sh /opt/bin/create_tsdb_tables.sh; \
     do \
