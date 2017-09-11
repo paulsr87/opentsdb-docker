@@ -8,7 +8,8 @@ RUN apk --update add \
     wget \
   && : adding gnuplot for graphing \
   && apk add gnuplot \
-    --update-cache
+    --update-cache \
+    --repository http://dl-3.alpinelinux.org/alpine/v3.6/community/
 
 ENV TSDB_VERSION 2.2.0
 ENV HBASE_VERSION 1.1.3
